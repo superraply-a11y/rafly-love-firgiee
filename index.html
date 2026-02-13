@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Firgiee 💖</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('background.jpg') no-repeat center center/cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 45px 60px;
+  border-radius: 25px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+h1 { font-size: 3em; }
+p { font-size: 1.2em; }
+h2 { margin-top: 25px; }
+
+button {
+  padding: 14px 36px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.yes {
+  background: #ff4d6d;
+  color: white;
+}
+
+.no {
+  background: white;
+  color: #ff4d6d;
+  position: absolute;
+}
+
+audio { display: none; }
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+  <source src="romantic.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+  <h1>Firgiee 💕</h1>
+  <p>Every moment feels warmer when I think about you.</p>
+  <h2>Do you want to be my girlfriend?</h2>
+
+  <button class="yes" onclick="alert('Yay 💖 Aku janji bakal jagain perasaan kamu 🤍')">
+    Yes 💗
+  </button>
+
+  <button class="no" onmouseover="moveButton(this)">
+    No 💔
+  </button>
+</div>
+
+<script>
+function moveButton(btn) {
+  btn.style.left = Math.random() * 80 + 'vw';
+  btn.style.top = Math.random() * 80 + 'vh';
+}
+</script>
+
+</body>
+</html>
